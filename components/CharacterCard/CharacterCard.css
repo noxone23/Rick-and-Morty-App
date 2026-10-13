@@ -53,3 +53,30 @@ li {
   padding: 0;
   margin: 0;
 }
+
+/* frame */
+.no-results {
+  width: 100%; 
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+  border: 2px dashed var(--color-accent-blue);
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+  margin-top: 20px;
+}
+
+/* error title */
+.no-results h2 {
+  font-family: 'Creepster', cursive;
+  color: var(--color-accent-blue);
+  font-size: 2rem;
+  letter-spacing: 6px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+/* error description */
+.no-results p {
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}

@@ -95,6 +95,17 @@ async function fetchCharacters()
   catch (error)
   {
     console.warn("Warning:", error.message);
+  
+    page = 1;
+    maxPage = 1;
+
+    cardContainer.innerHTML = `
+      <div class="no-results">
+        <h2>Interdimensional Error! 🛸</h2>
+        <p>No characters found in this dimension.</p>
+      </div>
+    `;
+
     render_navigation();
   }
   finally
