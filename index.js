@@ -6,6 +6,7 @@ import { initSearchbar } from "./components/SearchBar/SearchBar.js";
 const cardContainer = document.querySelector('[data-js="card-container"]');
 const navigation_container = document.querySelector('[data-js="navigation"]');
 const searchBar = document.querySelector('[data-js="search-bar"]');
+const title_element = document.querySelector('h1');
 
 // States
 let maxPage = 1;
@@ -56,6 +57,17 @@ initSearchbar(searchBar, (text) => {
   page = 1;
   fetchCharacters();
 });
+
+// clickable title to return to main page
+if (title_element)
+{
+  title_element.addEventListener("click", () => {
+    searchQuery = "";
+    page = 1;
+
+    fetchCharacters();
+  });
+}
   
 async function fetchCharacters()
 {
