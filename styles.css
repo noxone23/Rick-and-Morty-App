@@ -27,7 +27,9 @@
 body {
   font-family: var(--font-family);
   color: var(--color-primary);
-  padding: 20px;
+  margin: 0px;
+  padding: 0px;
+  
   
   /* stars */
   background: 
@@ -58,9 +60,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 main {
+  width: 100%;
+  max-width: 2540px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px; 
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 10px;
